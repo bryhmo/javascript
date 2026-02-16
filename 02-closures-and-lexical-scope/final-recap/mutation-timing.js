@@ -66,3 +66,20 @@ myPromise
       .catch((error)=>{
         console.log("Error",error);
       });
+
+
+
+
+  const p = new Promise((resolve,reject)=>{
+    resolve(false);
+    reject("B");
+  });
+
+  p
+    .then((data)=>{
+      console.log("success",data);
+
+    })
+    .catch((error)=>{
+      consolelog("error",error);
+    });
