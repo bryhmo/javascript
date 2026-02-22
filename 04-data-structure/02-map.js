@@ -113,4 +113,12 @@ const totals = orders.map(order =>{
 console.log(totals);
 
 
+const numberss = [2,4,3,4,5,6];
+const tot = numberss.reduce((sum,num)=>{
+    return sum + num ;
+},0);
+
+console.log(`the summ tottal of the element in the array is:  ${tot}`);
+
+
 
