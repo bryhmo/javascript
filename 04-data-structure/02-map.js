@@ -63,7 +63,7 @@ const formatted = products.map(product =>{
     };
 });
 
-console.log(formatted);//this is the real backend transformation logic ....you never send raw DB data directly.
+console.log(formatted); //this is the real backend transformation logic ....you never send raw DB data directly.
 
 // CONDITIONAL MAPPING 
 const scores = [40,70,85,30];
@@ -75,10 +75,42 @@ const result = scores.map(score=>{
     }
 })
 
+console.log(result);
 
 
 
+//5 ADDING NEW PROPERTY TO OBJECTS
 
+const customers = [
+    {name:"Nsisong Bassey",age:27,vission:"Progrmmer"},
+    {name:"adebusoye emmanuel",age:16,vission:"bitcoin trading"}
+];
+
+const updateUser = customers.map(customer =>{
+    return {
+        ...customer,
+        isAdult :customer.age >= 18
+    };
+});
+
+console.log(updateUser);
+
+// 6 Transformed Nested Data
+
+const orders = [
+    {id:1,items:[10,20]},
+    {id:2,items:[5,15]}
+];
+
+const totals = orders.map(order =>{
+    const total = order.items.reduce((sum ,price)=>sum + price,0);
+    return{
+        orderId:order.id,
+        totalAmount:total
+    };
+});
+
+console.log(totals);
 
 
 
