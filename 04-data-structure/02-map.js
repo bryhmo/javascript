@@ -122,3 +122,13 @@ console.log(`the summ tottal of the element in the array is:  ${tot}`);
 
 
 
+const arr1 =  [1,2,3,4];
+const result2 = arr1.map(num => {
+    if(num % 2 === 0){
+        return num *10;
+    }
+    return num;
+});
+console.log(result2);
+
+
