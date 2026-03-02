@@ -9,3 +9,9 @@ const fit2 = ["adebayo","Adegboye","Agbolagade","faith"];
 const result2 = fit2.filter(num => num.length < 7 );
 
 console.log(result2);
+
+const fit3 = ["adebayo","Adegboye","Agbolagade","faith"];
+
+const result3 = fit2.filter(num => num.length > 7 );
+
+console.log(result3);
