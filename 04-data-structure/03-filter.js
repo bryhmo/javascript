@@ -15,3 +15,12 @@ const fit3 = ["adebayo","Adegboye","Agbolagade","faith"];
 const result3 = fit2.filter(num => num.length > 7 );
 
 console.log(result3);
+
+
+const numbers = [5, 12, 8, 20];
+
+const result = numbers
+    .map(n => n * 2)
+    .filter(n => n > 20);
+
+console.log(result);
