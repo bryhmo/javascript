@@ -24,3 +24,12 @@ const result = numbers
     .filter(n => n > 20);
 
 console.log(result);
+
+const users = [
+    { name: "John", isAdmin: false },
+    { name: "Jane", isAdmin: true }
+];
+
+const hasAdmin = users.some(u => u.isAdmin);
+
+console.log(hasAdmin);
