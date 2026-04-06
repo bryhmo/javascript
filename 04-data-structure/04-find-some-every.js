@@ -42,7 +42,7 @@ const result = students.find(
 console.log(result);
 
 
-const users = [
+/* const users = [
     {id:1,name:"jane"},
     {id:2,name:"oba"},
     {id:3,name:"ademide"},
@@ -52,6 +52,30 @@ const users = [
 ];
 
 const user = users.find(u=>u.id>4);
-console.log(user);
+console.log(user); */
+
+
+
+const users = [
+    {id:1,active:true},
+    {id:2,active:false},
+    {id:3,active:true}
+];
+// check if a user exist 
+const userExists = users.find(user => user.id===3);
+console.log(userExists);
+
+//check if at leat one inactive user exist 
+const inactiveUser = users.some(user=>!user.active);
+if(inactiveUser){
+    console.log(inactiveUser);
+}
+else{
+    console.log("All our users are active");
+}
+
+// check if all users are active 
+const allActiveUsers = users.every(user=>user.active);
+console.log(allActiveUsers);
 
 
