@@ -50,3 +50,26 @@ console.log(stuResult);
 const sortEvenNumbers = [3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 const evenNumbers = sortEvenNumbers.filter(even=>even%2===0).map(even=>even**2);
 console.log(evenNumbers);
+
+
+const user = [
+    { name: "John", age: 17 },
+    { name: "Jane", age: 22 },
+    { name: "Mike", age: 30 }
+];
+
+const adultNames = user
+    .filter(user => user.age >= 28)
+    .map(user => user.name);
+
+console.log(adultNames);
+
+
+/* 
+When To Use filter()
+Use it when:
+You want to remove unwanted data
+You want to validate
+You want to apply business logic
+You want clean non-mutating array handling
+*/

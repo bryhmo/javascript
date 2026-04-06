@@ -110,6 +110,7 @@ Add/remove elements
 Use includes()
 
 Use spread operator
+
 */
 
 const arr = [5,10,15];
